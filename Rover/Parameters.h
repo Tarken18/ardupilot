@@ -27,7 +27,7 @@ public:
         k_param_format_version = 0,
         k_param_software_type, // unused
         k_param_can_mgr,
-
+        k_param_my_new_parameter, //prueba
         // Misc
         //
         k_param_log_bitmask_old = 10,  // unused
@@ -40,6 +40,7 @@ public:
         k_param_pivot_turn_angle_old,   // unused
         k_param_rc_13_old,  // unused
         k_param_rc_14_old,  // unused
+        
 
         // IO pins
         k_param_rssi_pin = 20,  // unused, replaced by rssi_ library parameters
@@ -226,6 +227,8 @@ public:
     AP_Int32    log_bitmask;
     AP_Int8     reset_switch_chan;
     AP_Int8     initial_mode;
+
+    AP_Int16    my_new_parameter; //inicialización del nuevo parámetro
 
     // Telemetry control
     //

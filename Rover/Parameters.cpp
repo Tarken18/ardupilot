@@ -10,6 +10,14 @@
 #define GOBJECTN(v, pname, name, class) { AP_PARAM_GROUP, name, Parameters::k_param_ ## pname, &rover.v, {group_info : class::var_info} }
 
 const AP_Param::Info Rover::var_info[] = {
+
+    // @Param: MY_NEW_PARAMETER
+    // @DisplayName: Mi nuevo parámetro
+    // @Description: Esto vale para saber si estoy cambiando algo
+    // @Range: -32768 32767
+    // @User: Advanced
+    GSCALAR(my_new_parameter,         "MY_NEW_PARAMETER",   MY_DEFAULT_PARAMETER_DEFAULT),
+
     // @Param: FORMAT_VERSION
     // @DisplayName: Eeprom format version number
     // @Description: This value is incremented when changes are made to the eeprom format
